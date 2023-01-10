@@ -16,23 +16,31 @@
   <meta name="author" content="CerebellumKing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="记录我摆烂日常中的coding">
+    <meta name="description" content="关于我软件工程本科在读，习惯性摆烂，间歇性学习。 写博客的初衷记录所学的知识，留个存档，不定期更新。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="CerebellumKing&#39;s Blog">
-<meta property="og:description" content="记录我摆烂日常中的coding">
+<meta property="og:description" content="关于我软件工程本科在读，习惯性摆烂，间歇性学习。 写博客的初衷记录所学的知识，留个存档，不定期更新。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-01-10T08:19:00.000Z">
+<meta property="article:modified_time" content="2023-01-10T09:28:46.901Z">
 <meta property="article:author" content="CerebellumKing">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>归档 - CerebellumKing&#39;s Blog</title>
+  <title>关于 - CerebellumKing&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -188,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="关于"></span>
           
         </div>
 
@@ -210,26 +218,68 @@
         <div id="board"
           >
           
+            <div class="about-avatar">
+              <img src="https://houniaoliuxue.oss-cn-shanghai.aliyuncs.com/myBlog/202108211145425.jpg" srcset="/img/loading.gif" lazyload class="img-fluid" alt="avatar">
+            </div>
+          
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 1 篇文章</p>
-  <hr>
-  
-  
-    
+<div class="text-center">
+  <div class="about-info">
+    <div class="about-name">CerebellumKing</div>
+    <div class="about-intro">躺平怪</div>
+    <div class="about-icons">
       
-      <p class="h5">2023</p>
-    
-    <a href="/2023/01/10/hello-world/" class="list-group-item list-group-item-action">
-      <time>01-10</time>
-      <div class="list-group-item-title">Hello World</div>
-    </a>
-  
+        
+        
+        
+        <a href=https://github.com/cerebellumking class="
+           hint--bottom hint--rounded"
+           aria-label=GitHub
+           target="_blank"
+        >
+          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+    </div>
+  </div>
 </div>
+
+<article class="about-content page-content mt-5">
+  <div class="markdown-body">
+    <h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>软件工程本科在读，习惯性摆烂，间歇性学习。</p>
+<h1 id="写博客的初衷"><a href="#写博客的初衷" class="headerlink" title="写博客的初衷"></a>写博客的初衷</h1><p>记录所学的知识，留个存档，不定期更新。</p>
+
+  </div>
+
+  
+</article>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
 
 
 
@@ -333,6 +383,59 @@
 
 
 
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
